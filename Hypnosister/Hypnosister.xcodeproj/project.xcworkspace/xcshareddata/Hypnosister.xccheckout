@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D5D968A-309C-4B2D-83DF-BEAE126FF816</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hypnosister</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A4E9CF28-7FB5-4FFD-BA8D-B8DD9A6D916D</key>
+		<string>https://github.com/katak/BNRHypnosister.git</string>
+		<key>ECA3AE37-3E9B-4DBC-8192-C362A646584E</key>
+		<string>https://github.com/katak/BNRQuiz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BNRHypnosister/Hypnosister/Hypnosister.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A4E9CF28-7FB5-4FFD-BA8D-B8DD9A6D916D</key>
+		<string>../../..</string>
+		<key>ECA3AE37-3E9B-4DBC-8192-C362A646584E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/katak/BNRHypnosister.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECA3AE37-3E9B-4DBC-8192-C362A646584E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A4E9CF28-7FB5-4FFD-BA8D-B8DD9A6D916D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BNRHypnosister</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECA3AE37-3E9B-4DBC-8192-C362A646584E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dev</string>
+		</dict>
+	</array>
+</dict>
+</plist>
