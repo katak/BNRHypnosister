@@ -56,6 +56,12 @@
     
     // Draw the line!
     [path stroke];
+    
+    // Create smaller rectangle for overlay image
+    CGRect overlayBounds = CGRectMake(bounds.size.width / 6.0, bounds.size.height / 6.0, bounds.size.width / 1.5, bounds.size.height / 1.75);
+    
+    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
+    [logoImage drawInRect:overlayBounds];
 }
 
 @end
