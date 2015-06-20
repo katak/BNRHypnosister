@@ -9,6 +9,12 @@
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisView.h"
 
+@interface BNRAppDelegate ()  <UIScrollViewDelegate>
+
+@property BNRHypnosisView *hypnosisView;
+
+@end
+
 @implementation BNRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,28 +25,35 @@
     // Create CGRects for frames
     CGRect screenRect = self.window.bounds;
     CGRect bigRect = screenRect;
-    bigRect.size.width *= 2.0;
+    //bigRect.size.width *= 2.0;
     
     // Create a screen-sized scroll view and add it to the window
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
-    scrollView.pagingEnabled = YES;
+//    scrollView.pagingEnabled = YES;
     [self.window addSubview:scrollView];
     
     // Create a screen-sized hypnosis view and add it to the scroll view
-    BNRHypnosisView *hypnosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
-    [scrollView addSubview:hypnosisView];
+    self.hypnosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:self.hypnosisView];
     
     // Add a second screen-sized hypnosis view just off screen to the right
-    screenRect.origin.x += screenRect.size.width;
-    BNRHypnosisView *anotherView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
-    [scrollView addSubview:anotherView];
+//    screenRect.origin.x += screenRect.size.width;
+//    BNRHypnosisView *anotherView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+//    [scrollView addSubview:anotherView];
     
     // Tell the scroll view how big its content area is
     scrollView.contentSize = bigRect.size;
+    scrollView.maximumZoomScale = 3.0;
+    scrollView.delegate = self;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.hypnosisView;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
